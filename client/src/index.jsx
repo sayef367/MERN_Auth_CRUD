@@ -1,4 +1,5 @@
 import NoteTop from "./components/noteTop"
+import DeleteModel from "./components/deleteModel"
 
 export default function Index() {
   return (
@@ -26,7 +27,53 @@ export default function Index() {
             </div>
           </div>
         </div>
-        
+        {/* if note is empty */}
+        {/* {(empty === true) ? <p className="text-center">Empty Note</p> : ''} */}
+
+        {/* View modal */}
+        {/* <ViewModel title={title} content={content}/> */}
+
+        {/* <!-- Delete Modal --> */}
+        <DeleteModel />  {/* deleteId={modeNoteId} */}
+
+        {/* <!-- Update Modal --> */}
+        {/* <div className="modal fade" id="exampleModal" aria-hidden="true">
+          <div className="modal-dialog modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Update Note</h5>
+              </div>
+              <div className="modal-body">
+                <form>
+                  <div className="mb-3">
+                    <label className="col-form-label">Title</label>
+                    <input type="text" className="form-control" id="title"
+                      value={title}
+                      onChange={(e) => setTitle(e.target.value)}
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label className="col-form-label">Content</label>
+                    <textarea className="form-control" id="content"
+                      value={content}
+                      style={{ height: '150px' }}
+                      onChange={(e) => setContent(e.target.value)}
+                    />
+                  </div>
+                </form>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-outline-dark" data-bs-dismiss="modal"
+                  ><i className="bi bi-x-circle-fill" />
+                </button>
+                <button type="submit" className="btn btn-outline-dark"
+                  onClick={() => updateNote(noteId)}
+                  ><i className="bi bi-check-circle-fill" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> */}
       </div>
 
       {/* Footer bar */}
