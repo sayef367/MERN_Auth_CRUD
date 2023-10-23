@@ -1,11 +1,12 @@
 import NoteTop from "./components/noteTop"
 import DeleteModel from "./components/deleteModel"
+import Nav from "./components/nav"
 
 export default function Index() {
   return (
-    <div className="container">
+    <div>
+      <Nav />
       <NoteTop />
-      
       <div className="row mt-4 justify-content-md-center">
         <div className="col-lg-4 col-md-6 col-sm-12 mb-4" >
           <div className="card shadow" 
